@@ -7,7 +7,7 @@ import Loader from '@/components/Loader'
 import { FaGithub, FaYoutube, FaFacebook, FaMedium, FaWordpress, FaEnvelope, FaPhone, FaInstagram, FaCopy } from 'react-icons/fa';
 
 // create ur api key here https://aistudio.google.com/app/apikey
-const API_KEY = process.env.NEXT_PUBLIC_API_KEY
+const API_KEY = process.env.GEMINI_API_KEY_VISION
 const Home = () => {
   const [file, setFile] = useState(null)
   const [prompt, setPrompt] = useState('')
