@@ -8,13 +8,15 @@
       "use": "@vercel/next"
     }
   ],
-  "env": {
-    "GEMINI_API_KEY_VISION": "@gemini_api_key_vision"
-  },
+ 
   "routes": [
     {
+      "src": "/api/(.*)",
+      "dest": "/api/$1"
+    },
+    {
       "src": "/(.*)",
-      "dest": "/"
+      "dest": "/$1"
     }
   ],
   "github": {
